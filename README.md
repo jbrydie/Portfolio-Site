@@ -16,3 +16,6 @@ Currently hosted on Github.
 Sidenote: This is a living, breathing project, as I continue devloping and broadening my skillset, my website will reflect accordingly. I am new to web development so my first few iterations will require much improvement. 
 
 
+#CREDIT
+originally built by [@Crearo](https://github.com/crearo/)
+modified by me
