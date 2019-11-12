@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block head %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<link type="text/css" rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js'></script>
+
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/home.css') }}">
+<script type="text/javascript" src="{{ url_for('static', filename = 'js/home.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="wrapper fixed-wrapper desktop-only">
+        <section id="terminal">
+            <div id="terminal-container">
+                <div class="terminal">
+                    <div class="window-title">
+                        <div class="win-buttons">
+                            <a id="close" class="button" href="#"></a>
+                            <a id="min" class="button" href="#"></a>
+                            <a id="max" class="button" href="#"></a>
+                        </div>
+                        <span class="title">Terminal</span>
+                    </div>
+                    <div class="message">
+                        <span class='prompt'><span class='user'>jbrydie</span><span class="at">@</span><span
+                                class="path">/home/jbrydie/</span>><span class="caret">$</span></span>
+                        <span class="typed"></span>
+                        <form>><span class="caret">$</span>&nbsp;<input type="text" name="response"></input></form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="wrapper scroll-wrapper">
+        <div class="top-text">
+            <p class="text-title desktop-view">Jordan Brydie</p>
+            <p class="text-title mobile-view">Jordan Brydie</p>
+            <div>
+                <a target="_blank" href="https://github.com/jbrydie">
+                    <img class="title-logo" src="static/images/github.svg">
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/in/jbrydie/">
+                    <img class="title-logo" src="static/images/linkedin-logo.svg">
+                </a>
+                <a target="_blank" href="mailto:jordanbrydie@gmail.com">
+                    <img class="title-logo" src="static/images/gmail-logo.svg">
+                </a>
+            </div>
+        </div>
+        <div class="middle-text">
+            <p class="text-content">
+            </p>
+
+            <p class="text-content">Hey Whats up! I'm Jordan, a consultant and aspiring data scientist based in New York, NY. I love building
+                things providing my clients a means of extracting the most value out of their data. 
+
+                Shortly after I received my Bachelors of Science in Finance & Computer Science from <a href="https://academics.providence.edu/computer-science/">Providence College</a>,
+                with a core focus in Mathematics and certificate in Data & Analytics, I joined Ernst &amp; Young&#39;s</s> (EY) technology consulting group where
+                I work on a variety of interesting and meaningful projects to solve our clients' most challenging problems.</p>
+
+
+            <p class="text-content">You can find me on <a href="http://in.linkedin.com/in/jbrydie">LinkedIn</a>,
+                or shoot me an email<a href="mailto:jordanbrydie@gmail.com?Subject=Hey%20Jordan%20" target="_top"> here</a>.
+            </p>
+
+            <p class="text-content">Let's get in touch!</p>
+
+            <p class="text-content">If you'd like to learn a bit more about me, please visit my <a href="/aboutme">About Me</a></p>
+
+            <br>
+        </div>
+    </div>
+</div>
+{% endblock %}

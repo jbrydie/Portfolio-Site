@@ -1,0 +1,17 @@
+{
+  "projects": [
+    {
+      "name": "Portfolio Website",
+      "link": "https://github.com/jbrydie",
+      "weight": 1,
+      "tags": [
+        "python", "flask"
+      ],
+      "date": "October 2019",
+      "short": "Portfolio Site to showcase some of projects and work i've done",
+      "photos": [
+        "/static/projects/..."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "experiences": [
+    {
+      "name": "Providence College",
+      "link": "education",
+      "location": "Providence, Rhode Island",
+      "weight": 1,
+      "tags": [
+        "cs", "finance"
+      ],
+      "date": "September 2014 - May 2018",
+      "short": "Bachelor of Science in Finance & Computer Science, Mathematics core focus, Cetificate in Data & Analytics",
+      "photos": [
+        "/static/experiences/pc-logo.jpg"
+      ]
+    }
+  ]
+}
