@@ -1,6 +1,4 @@
-# www.jordanbrydie.io
-
-This is [my personal portfolio website](http://jordanbrydie.io). 
+Not hosted yet. Will host once I'm finished with the first iteration.
 
 # Screenshots
 <p float="left">
