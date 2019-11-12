@@ -1,17 +1,27 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 
 {% block head %}
 <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/aboutme.css') }}">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 {% endblock %}
 
-<g id="Logo" transform="translate(-8.000000, -2.000000)"><g transform="translate(11.000000, 5.000000)">
-    <path d="M45.691667,45.15 C48.591667,46.1 50.691667,48.95 50.691667,52.2 C50.691667,57.95 46.691667,
-            61 40.291667,61 L28.541667,61 L28.541667,30.3 L39.291667,30.3 C45.691667,30.3 49.691667,33.15 49.691667,
-            38.65 C49.691667,41.95 47.941667,44.35 45.691667,45.15 Z M33.591667,43.2 L39.241667,43.2 C42.791667,43.2 44.691667,
-            41.85 44.691667,38.95 C44.691667,36.05 42.791667,34.8 39.241667,34.8 L33.591667,34.8 L33.591667,43.2 Z M33.591667,
-            47.5 L33.591667,56.5 L40.191667,56.5 C43.691667,56.5 45.591667,54.75 45.591667,52 C45.591667,49.2 43.691667,47.5 40.191667,
-            47.5 L33.591667,47.5 Z" fill="#64FFDA">
-    </path>
-            <polygon id="Shape" stroke="#64FFDA" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" 
-            points="39 0 0 22 0 67 39 90 78 68 78 23"></polygon></g>
-</g>
+{% block body %}
+
+<title>About Jordan Brydie</title>
+<h1>About Jordan Brydie</h1>
+
+<h2>Who are you?</h2>
+<p>My name is Jordan Brydie. I was born and raised in Boston, Massachusetts, but I currently live in New York City, New York.</p>
+<div class="sqs-block horizontalrule-block sqs-block-horizontalrule" data-block-type="47" id="block-yui_3_17_2_5_1458939380067_17094"><div class="sqs-block-content"><hr /></div></div>
+
+<h2>Where did you go to school?</h2>
+<p>I attended <a href="providence.edu" style="color: black;" target="_blank">Providence College</a> 
+in Providence, Rhode Island. I received a Bachelor of Science degree with dual majors in <a href="https://mathematics-computer-science.providence.edu/" style="color: black;" target="_blank">Computer Science</a> 
+and <a href="https://business.providence.edu/finance/" style="color: black;" target="_blank">Finance.</a>with a focus in Mathematics. In an effort to augment my majors, I also received a certificate in Data & Analytics</p>
+<div class="sqs-block horizontalrule-block sqs-block-horizontalrule" data-block-type="47" id="block-yui_3_17_2_5_1458939380067_17094"><div class="sqs-block-content"><hr /></div></div>
+
+<h2></h2>
+{% endblock %}
