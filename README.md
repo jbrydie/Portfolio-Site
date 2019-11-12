@@ -1,6 +1,4 @@
-# www.jordanbrydie.io
-
-This is [my personal portfolio website](http://jordanbrydie.io). 
+Not hosted yet. Will host once I'm finished with the first iteration.
 
 # Screenshots
 <p float="left">
@@ -16,3 +14,7 @@ Currently hosted on Github.
 Sidenote: This is a living, breathing project, as I continue devloping and broadening my skillset, my website will reflect accordingly. I am new to web development so my first few iterations will require much improvement. 
 
 
+
+# CREDIT
+originally built by [@Crearo](https://github.com/crearo/)
+modified by me
