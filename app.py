@@ -12,7 +12,7 @@ app = Flask(__name__)
 try:
     app.config['GA_TRACKING_ID'] = os.environ['GA_TRACKING_ID']
 except:
-    print('Tracking ID not set')
+    print('Please set your Tracking ID!')
 
 resume_pdf_link = 'https://drive.google.com/file/d/1zZKuTrbdliU2r8VM0U_-rGGoiYSutbWD/view?usp=sharing' # this may not work, try to embed s
 

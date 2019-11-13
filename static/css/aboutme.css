@@ -1,6 +1,6 @@
-body {
+html body {
     height:100vh;
     max-width: 100%;
     font-family: 'Open Sans', sans-serif;
-    background-color: midnightblue !important;
+    font-size: 10px;
   }
