@@ -64,7 +64,6 @@ def project(title):
     if in_project is None and in_exp is None:
         return render_template('404.html'), 404 #if experiences.json and projects.json are empty, render 404 page
     
-    # fixme: shitty hardcoding here.
     elif in_project is not None and in_exp is not None:
         selected = in_exp
     elif in_project is not None:
@@ -72,7 +71,7 @@ def project(title):
     else:
         selected = in_exp
 
-    # load html if the json file doesn't contain a description
+
     if 'description' not in selected:
         path = "experiences" if in_exp is not None else "projects"
         selected['description'] = io.open(get_static_file(
@@ -95,44 +94,6 @@ def get_static_json(path):
     return json.load(open(get_static_file(path)))
 
 
-
-"""
-Specific URLs
-"""
-
-# @app.route('/fifa-or-real')
-# def fifa_or_real():
-#     return render_template('upload.html')
-
-
-# @app.route('/upload', methods=['POST'])
-# def upload_file():
-#     if request.method == 'POST':
-#         f = request.files['file']
-#         os.makedirs('./static/uploads/', exist_ok=True)
-#         file_name = 'upload-%s' % time.strftime("%Y-%m-%d-%H-%M-%S")
-#         f.save('./static/uploads/%s' % file_name)
-#         return redirect(url_for('predict_fifa', name=file_name))
-
-
-# @app.route('/predict-fifa')
-# def predict_fifa():
-#     import fastai.vision as fastai
-#     global fifa_learn
-
-#     name = request.args.get('name')
-#     path = './static/uploads/%s' % name
-#     print('------------------')
-#     print(path)
-#     if not os.path.exists(path):
-#         return "File doesn't exist, soz, go to the home page! %s" % path
-
-#     img = fastai.open_image(path)
-#     if fifa_learn is None:
-#         fifa_learn = fastai.load_learner('.', 'fifa.learn')
-#     pred_class, pred_idx, outputs = fifa_learn.predict(img)
-#     return render_template('fifa-or-real-predict.html', img=path, predict_class=pred_class, predict_confidence=outputs,
-#                            name=name)
 
 if __name__ == "__main__":
     print("running py app")
