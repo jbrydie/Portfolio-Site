@@ -3,6 +3,11 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+.logo{
+  height: 16vh;
+  width: 16vh;
+  margin: -10px 0;
+}
 
 .navbar-ref {
   color: #808080;
