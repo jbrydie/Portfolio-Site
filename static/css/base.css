@@ -3,26 +3,36 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+
 .navbar-ref {
   color: #808080;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
 }
 
+.navbar-ref a{
+  transition: all 0.3s ease 0s;
+}
+
+.navbar-ref a:hover{
+  color: black;
+}
+
 .navbar-ul {
     background-color: white;
-    display: flex;
+    display: justify;
     justify-content: flex-end;
     width: 100%;
 }
 
 .list-inline {
-  display: flex;
+  display: justify;
   text-decoration: none;
-  justify-content: space-around;
+  justify-content: space-between;
   margin:20px 0;
   width: 50%;
 }
+
 
 @media only screen and (max-width: 1094px) {
   .list-inline {

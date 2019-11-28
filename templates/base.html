@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Jordan Brydie | Consultant</title>
-    <link rel="icon" href="../jblogo.png" type="image/png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="base.css">
 
     <!--fonts-->
     <link rel='stylesheet'href='https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Source+Code+Pro:400,500,600,700'type='text/css' media='screen'/>
@@ -38,24 +38,27 @@
 
 <body>
     <header> 
-        <img src="../jblogo.png" alt="JDB's Logo">
-    </header>
-    <div class="navbar-ul">
-        <ul id="navbar-list" class="list-inline">
-        <li class="nav-item active">
-            <a class="navbar-ref" href="/">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="navbar-ref" href="/aboutme">About</a>
-        </li>
-        <li class="nav-item">
-            <a class="navbar-ref" href="/projects">Projects</a>
-        </li>
-        <li class="nav-item">
-            <a class="navbar-ref" href="/experiences">Experiences</a>
-        </li>
-      </ul>
-    </div>
+        <div  class="container">
+              <a class="navbar-brand" href="/">
+                <img  class="logo"  src="../static/images/JBsign.png" alt="logo">
+                </a>
+                <div class="navbar-ul">
+                     <ul id="navbar-list" class="list-inline">
+                         <li class="nav-item active">
+                             <a class="navbar-ref" href="/">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="navbar-ref" href="/aboutme">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="navbar-ref" href="/projects">Projects</a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="navbar-ref" href="/experiences">Experiences</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </header>    
 {% block body %}
 {% endblock %}
 </body>
