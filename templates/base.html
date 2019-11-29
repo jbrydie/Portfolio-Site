@@ -37,28 +37,15 @@
 </head>
 
 <body>
-    <header> 
-        <div  class="container">
-              <a class="navbar-brand" href="/">
-                <img  class="logo"  src="../static/images/JBsign.png" alt="logo">
-                </a>
-                <div class="navbar-ul">
-                     <ul id="navbar-list" class="list-inline">
-                         <li class="nav-item active">
-                             <a class="navbar-ref" href="/">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="navbar-ref" href="/aboutme">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="navbar-ref" href="/projects">Projects</a>
-                             </li>
-                             <li class="nav-item">
-                                 <a class="navbar-ref" href="/experiences">Experiences</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </header>    
+    <nav class="navigation-bar">
+         <img class="logo"  src="../static/images/JBsign.png" alt="logo">
+         <ul>
+             <li><a href="/">Home</a></li>
+             <li><a href="/aboutme ">Projects</a></li>
+             <li><a href="/projects">About</a></li>
+             <li><a href="/experiences">Services</a></li>
+            </ul>
+        </nav>
 {% block body %}
 {% endblock %}
 </body>

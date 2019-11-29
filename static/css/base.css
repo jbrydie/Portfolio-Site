@@ -3,31 +3,10 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-.logo{
-  height: 16vh;
-  width: 16vh;
-  margin: -10px 0;
-}
-
-.navbar-ref {
+.navigation-bar {
   color: #808080;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-}
-
-.navbar-ref a{
-  transition: all 0.3s ease 0s;
-}
-
-.navbar-ref a:hover{
-  color: black;
-}
-
-.navbar-ul {
-    background-color: white;
-    display: justify;
-    justify-content: flex-end;
-    width: 100%;
 }
 
 .list-inline {
@@ -38,13 +17,30 @@ body {
   width: 50%;
 }
 
+ /* .logo{
+   display: inline-block;
+   vertical-align: top;
+  height: 4vh;
+  width: 6vh;
+  margin: -9px;
+} */
+
+.navigation-bar > a {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+  height: 80px;        /* if you want it to take the full height of the bar */
+  line-height: 80px;    /* if you want it vertically middle of the navbar */
+}
+
+
 
 @media only screen and (max-width: 1094px) {
   .list-inline {
     width: 100%;
   }
 
-  .navbar-ref {
+  .navigation-bar{
     color: #808080;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
