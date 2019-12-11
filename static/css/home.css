@@ -6,8 +6,9 @@ body {
 .top-text{
     min-height: calc(100vh - 128px);
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     justify-content: center;
+    text-decoration-color: antiquewhite;
 }
 
 .middle-text{

@@ -48,7 +48,7 @@ def projects():
 
 def order_projects_by_weight(projects):
     try:
-        return int(projects['weight'])
+        return(int(projects['weights']))
     except KeyError:
         return
 

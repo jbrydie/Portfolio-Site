@@ -3,37 +3,6 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-.navigation-bar {
-  color: #808080;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-}
-
-.list-inline {
-  display: justify;
-  text-decoration: none;
-  justify-content: space-between;
-  margin:20px 0;
-  width: 50%;
-}
-
- /* .logo{
-   display: inline-block;
-   vertical-align: top;
-  height: 4vh;
-  width: 6vh;
-  margin: -9px;
-} */
-
-.navigation-bar > a {
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 20px;
-  height: 80px;        /* if you want it to take the full height of the bar */
-  line-height: 80px;    /* if you want it vertically middle of the navbar */
-}
-
-
 
 @media only screen and (max-width: 1094px) {
   .list-inline {
